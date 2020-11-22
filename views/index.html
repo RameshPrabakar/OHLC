@@ -1,0 +1,40 @@
+    <html>
+        <head>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+            <script type="text/javascript" src="./index.js"></script>
+            <script type="text/javascript">
+                window.onload =function() {
+                    $(".chartContainer").CanvasJSChart({
+                        title: {
+                            text: "Trade Test"
+                        },
+                        axisY: {
+                            includeZero: false,
+                            prefix: "$",
+                            title: "Price"
+                        },
+                        toolTip: {
+                            content: "{x} <br/> Open: {y[0]}, Close: {y[3]} <br/> Low: {y[2]}, High: {y[1]}"
+                        },
+                        data: [
+                            {
+                                type: "ohlc",
+                                dataPoints: [ { x: new Date(2014, 5, 2), y: [0, 0, 0, 0] }]
+                            }
+                        ]
+                    });
+                }
+            </script>
+        </head>
+        <body>
+            <div class="chartContainer" style="float:left; height: 300px; width: 50%; border: 1px solid;">
+            </div>
+            <div style="float:right; height: 600px; width: 48%;" id="result">
+            </div>
+
+            <button style="float:left;margin: 10px 35px" type="button" id="btnStart">Start</button>
+            <div style="float:left; margin: 10px;"> Timer : <span id="timer"></span> </div>
+
+        </body>
+    </html>
