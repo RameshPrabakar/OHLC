@@ -6,21 +6,26 @@ This README would normally document whatever steps are necessary to get your app
 
 Analytical Server "OHLC" (Open/High/Low/Close) time series based on the 'Trades' input dataset.
 
-### `npm install`
+### How do I get set up? ###
 
-Dependend packages will install
+* Use Git or checkout with SVN using the web URL https://github.com/RameshPrabakar/OHLC.git
 
-### `npm start`
+*  Using following command it help to install dependend packages `npm install` 
 
-Runs the app in the development mode.\
+* Once packages installed goto terminal navigate to project folder and use below command to start project `npm start`
+
+* Runs the app in the development mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* The page will reload if you make edits.\
+* You will also see any lint errors in the console.
 
 ## Detailed Documentation ##
 
-You can see the `OHLC BAR` chart with blank values ​​after page render. Below that bar chart you will see the `Start` button to start the fake trade and a timer will run next to the button to indicate the end time of the trade.
+* You can see the `OHLC BAR` chart with blank values ​​after page render.
+* Below that bar chart you will see the `Start` button to start the fake trade and a timer will run next to the button to indicate the end time of the trade.
 
-For the first 15 seconds the 'OHLC Bar' chart will be empty. The results will be displayed at the end of 15 seconds. The result json will publish the result next to the chart.
-This will continue until the sample file data is exhausted
+* For the first 15 seconds the 'OHLC Bar' chart will be empty.
+* The results will be displayed at the end of 15 seconds.
+* The result json will publish the result next to the chart.
+* This will continue until the sample file data is exhausted.
